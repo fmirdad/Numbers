@@ -29,10 +29,10 @@
             int z = x;
             for (int i = 0; i < y; i++) // for loop where i = 0, run loop whilst i is less than y, add 1 to i each time loop runs.
             {
-
                z = z * x;  // each time the loop runs, multiply z by x and set z to the result.
             }
-            return z;
+            if (y == 0) return 1; // if y is equal to 0 set result (z) to 1;
+            else return z; // else return z calculation
 
         }
 
